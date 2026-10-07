@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Ludo</title>
+
+    <style>
+        .board {
+            width: 450px;
+            height: 450px;
+            border: 3px solid black;
+            margin: 50px auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .box {
+            border: 2px solid black;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .white {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="board">
+
+        <div class="box red"></div>
+        <div class="box white"></div>
+        <div class="box green"></div>
+
+        <div class="box white"></div>
+        <div class="box yellow"></div>
+        <div class="box white"></div>
+
+        <div class="box yellow"></div>
+        <div class="box white"></div>
+        <div class="box blue"></div>
+
+    </div>
+
+</body>
+</html>

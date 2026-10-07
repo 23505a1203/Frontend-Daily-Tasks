@@ -1,0 +1,267 @@
+/* ==========================================================================
+   1. GLOBAL RESET & THEME (Luxury Dark Aesthetic)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================================================
+   2. INTERNAL PAGES NAVIGATION HEADER
+   ========================================================================== */
+.internal-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #1c1c1e;
+    border-bottom: 1px solid #2c2c2e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.internal-nav .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    color: #ffb703;
+}
+
+.internal-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.internal-nav a {
+    font-size: 0.95rem;
+    color: #a1a1a6;
+    transition: color 0.3s;
+}
+
+.internal-nav a:hover, .internal-nav a.active {
+    color: #ffb703;
+}
+
+/* Page Containers */
+.page-container {
+    padding: 60px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    color: #ffb703;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    color: #a1a1a6;
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   3. HOMEPAGE (BENTO GRID SYSTEM)
+   ========================================================================== */
+.bento-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.bento-box {
+    background-color: #1c1c1e;
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #2c2c2e;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bento-box:hover {
+    transform: scale(1.02);
+    border-color: #ffb703;
+    box-shadow: 0 10px 30px rgba(255, 183, 3, 0.1);
+}
+
+.brand-box { grid-column: span 2; grid-row: span 2; justify-content: center; }
+.brand-box h1 { font-size: 3.5rem; color: #ffb703; font-family: Georgia, serif; }
+.menu-box { grid-column: span 2; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600') center/cover; }
+.about-box { grid-column: span 1; grid-row: span 2; background-color: #ffb703; color: #121212; border: none; }
+.about-box p { color: #333; }
+.contact-box { grid-column: span 1; background-color: #fb8500; border: none; color: #121212; }
+.reviews-box { grid-column: span 2; }
+.arrow-hint { align-self: flex-end; font-size: 1.3rem; transition: transform 0.3s; }
+.bento-box:hover .arrow-hint { transform: translate(5px, -5px); }
+
+/* ==========================================================================
+   4. MENU PAGE STYLES (Cards Grid)
+   ========================================================================== */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.menu-card {
+    background: #1c1c1e;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #2c2c2e;
+}
+
+.menu-img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-info {
+    padding: 25px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.menu-header h3 { font-size: 1.3rem; font-family: Georgia, serif; }
+.menu-price { color: #ffb703; font-weight: bold; font-size: 1.2rem; }
+.menu-info p { color: #a1a1a6; font-size: 0.9rem; }
+
+/* ==========================================================================
+   5. ABOUT PAGE STYLES (Split Content Layout)
+   ========================================================================== */
+.about-split {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content { flex: 1; min-width: 320px; }
+.about-content p { color: #a1a1a6; margin-bottom: 20px; font-size: 1.05rem; }
+.about-media {
+    flex: 1;
+    min-width: 320px;
+    height: 450px;
+    background: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=600') center/cover;
+    border-radius: 24px;
+    border: 1px solid #2c2c2e;
+}
+
+/* ==========================================================================
+   6. REVIEWS PAGE STYLES (Grid Masonry Layout)
+   ========================================================================== */
+.reviews-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.review-card {
+    background: #1c1c1e;
+    border: 1px solid #2c2c2e;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.stars { color: #ffb703; margin-bottom: 15px; font-size: 1.1rem; }
+.review-card p { font-style: italic; color: #e5e5ea; margin-bottom: 20px; }
+.author { font-size: 0.85rem; color: #a1a1a6; text-transform: uppercase; letter-spacing: 1px; }
+
+/* ==========================================================================
+   7. CONTACT & RESERVATIONS PAGE STYLES
+   ========================================================================== */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+}
+
+.info-pane {
+    background: #1c1c1e;
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid #2c2c2e;
+}
+
+.info-block { margin-bottom: 30px; }
+.info-block h4 { color: #ffb703; margin-bottom: 5px; text-transform: uppercase; font-size: 0.85rem; }
+
+.form-pane form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-pane .full-width { grid-column: span 2; }
+
+input, select, textarea {
+    width: 100%;
+    background: #1c1c1e;
+    border: 1px solid #2c2c2e;
+    padding: 15px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus { border-color: #ffb703; }
+::placeholder { color: #555; }
+
+.btn-submit {
+    grid-column: span 2;
+    background: #ffb703;
+    color: #121212;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover { background: #fb8500; }
+
+/* ==========================================================================
+   8. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 900px) {
+    .bento-container { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+    .brand-box, .menu-box, .about-box, .reviews-box, .contact-box { grid-column: span 2 !important; grid-row: span 1 !important; }
+    .contact-wrapper { grid-template-columns: 1fr; }
+    .internal-nav { flex-direction: column; gap: 20px; }
+}
