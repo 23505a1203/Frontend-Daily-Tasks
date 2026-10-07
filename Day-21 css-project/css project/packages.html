@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Tour Packages | Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .pkg-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .pkg-img img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .pkg-body {
+            padding: 25px;
+            flex-grow: 1;
+        }
+        .badge-tag {
+            display: inline-block;
+            background: #ff4a5a;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .pkg-body h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        .pkg-body p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .pkg-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-size: 0.88rem;
+            color: #666;
+        }
+        .pkg-features li {
+            margin-bottom: 6px;
+        }
+        .price-container {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h2>Hav<span>en</span></h2></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html" class="active">Packages</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container section-padding">
+        <h2 class="section-title">All-Inclusive Tour Packages</h2>
+        
+        <div class="packages-grid">
+            
+            <div class="pkg-card">
+                <div class="pkg-img">
+                    <img src="honeymoon.jpg" alt="Honeymoon Escape">
+                </div>
+                <div class="pkg-body">
+                    <span class="badge-tag">7 Days / 6 Nights</span>
+                    <h3>Luxury Honeymoon Escape</h3>
+                    <p>All-inclusive modern resort villas, private shoreline dining, and guided spa tracks.</p>
+                    <ul class="pkg-features">
+                        <li>✨ Private Overwater Villa</li>
+                        <li>🥂 Complimentary Champagne</li>
+                        <li>💆 Daily Couples Massage</li>
+                    </ul>
+                    <span class="price-container">₹2,38,478 <span style="font-size:0.9rem; font-weight:400;">/ person</span></span>
+                    <a href="contact.html" class="btn" style="display: block; text-align: center;">Inquire Now</a>
+                </div>
+            </div>
+
+            <div class="pkg-card">
+                <div class="pkg-img">
+                    <img src="alpine.jpg" alt="Alpine Adventure">
+                </div>
+                <div class="pkg-body">
+                    <span class="badge-tag" style="background: #4a90e2;">5 Days / 4 Nights</span>
+                    <h3>Alpine Backcountry Trek</h3>
+                    <p>Glacier mountaineering passes, equipment outfitting, and heated mountain lodge bases.</p>
+                    <ul class="pkg-features">
+                        <li>🥾 Expert Alpine Guides</li>
+                        <li>🏔️ Premium Gear Rentals</li>
+                        <li>🏡 Heated Base Cabin Stays</li>
+                    </ul>
+                    <span class="price-container">₹1,19,302 <span style="font-size:0.9rem; font-weight:400;">/ person</span></span>
+                    <a href="contact.html" class="btn" style="display: block; text-align: center;">Inquire Now</a>
+                </div>
+            </div>
+
+            <div class="pkg-card">
+                <div class="pkg-img">
+                    <img src="culture.jpg" alt="Cultural Heritage">
+                </div>
+                <div class="pkg-body">
+                    <span class="badge-tag" style="background: #9013fe;">10 Days / 9 Nights</span>
+                    <h3>Historical Heritage Tour</h3>
+                    <p>VIP admission museum ticketing, historical expert guidance, and boutique central stays.</p>
+                    <ul class="pkg-features">
+                        <li>🏛️ Skip-The-Line VIP Passes</li>
+                        <li>🗣️ Local Historian Escorts</li>
+                        <li>🏨 5-Star Boutique Hotels</li>
+                    </ul>
+                    <span class="price-container">₹3,42,344 <span style="font-size:0.9rem; font-weight:400;">/ person</span></span>
+                    <a href="contact.html" class="btn" style="display: block; text-align: center;">Inquire Now</a>
+                </div>
+            </div>
+
+            <div class="pkg-card">
+                <div class="pkg-img">
+                    <img src="advanture.jpg" alt="Serengeti Safari Adventure">
+                </div>
+                <div class="pkg-body">
+                    <span class="badge-tag" style="background: #2ecc71;">6 Days / 5 Nights</span>
+                    <h3>Serengeti Wildlife Safari</h3>
+                    <p>Daily game drives tracking the Big Five, luxury tented wilderness eco-camps, and local trackers.</p>
+                    <ul class="pkg-features">
+                        <li>🐆 open-top 4x4 Cruisers</li>
+                        <li>⛺ Luxury Eco-Glamping</li>
+                        <li>🔭 Night-Vision Tracks</li>
+                    </ul>
+                    <span class="price-container">₹2,85,900 <span style="font-size:0.9rem; font-weight:400;">/ person</span></span>
+                    <a href="contact.html" class="btn" style="display: block; text-align: center;">Inquire Now</a>
+                </div>
+            </div>
+
+            <div class="pkg-card">
+                <div class="pkg-img">
+                    <img src="sea.jpg" alt="Aegean Coastal Sailing">
+                </div>
+                <div class="pkg-body">
+                    <span class="badge-tag" style="background: #e67e22;">8 Days / 7 Nights</span>
+                    <h3>Aegean Coastal Sailing</h3>
+                    <p>Private luxury catamaran cruising across crystal island waters with personal onboard chef service.</p>
+                    <ul class="pkg-features">
+                        <li>⛵ Yacht Cruise Itinerary</li>
+                        <li>🍳 Private Onboard Chef</li>
+                        <li>🤿 Snorkeling Equipment</li>
+                    </ul>
+                    <span class="price-container">₹3,15,400 <span style="font-size:0.9rem; font-weight:400;">/ person</span></span>
+                    <a href="contact.html" class="btn" style="display: block; text-align: center;">Inquire Now</a>
+                </div>
+            </div>
+
+            <div class="pkg-card">
+                <div class="pkg-img">
+                    <img src="artic.jpg" alt="Arctic Aurora Expedition">
+                </div>
+                <div class="pkg-body">
+                    <span class="badge-tag" style="background: #00ced1;">6 Days / 5 Nights</span>
+                    <h3>Arctic Aurora Expedition</h3>
+                    <p>Stay inside heated thermal glass igloos while tracking night sky celestial colors in remote Lapland.</p>
+                    <ul class="pkg-features">
+                        <li>🔮 Glass Igloo Lodging</li>
+                        <li>🐕 Husky Sled Safaris</li>
+                        <li>❄️ Thermal Arctic Outfitting</li>
+                    </ul>
+                    <span class="price-container">₹2,98,600 <span style="font-size:0.9rem; font-weight:400;">/ person</span></span>
+                    <a href="contact.html" class="btn" style="display: block; text-align: center;">Inquire Now</a>
+                </div>
+            </div>
+
+        </div>
+

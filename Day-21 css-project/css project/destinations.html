@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Hotspots | Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .dest-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .dest-card:hover {
+            transform: translateY(-5px);
+        }
+        .dest-img img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+        .dest-body {
+            padding: 25px;
+        }
+        .dest-body h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        .dest-body p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            height: 70px;
+            overflow: hidden;
+        }
+        .tag-badge {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #666;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .category-title {
+            font-size: 1.8rem;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h2>Hav<span>en</span></h2></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container section-padding">
+        <h2 class="section-title">Categorised Global Hotspots</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 50px; justify-content: center;">
+            <a href="#beaches" style="text-decoration: none; background: #ff4a5a; color: white; padding: 8px 20px; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">🏖️ Beaches</a>
+            <a href="#mountains" style="text-decoration: none; background: #333; color: white; padding: 8px 20px; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">🏔️ Mountains</a>
+            <a href="#cultural" style="text-decoration: none; background: #333; color: white; padding: 8px 20px; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">🏛️ Cultural</a>
+            <a href="#wildlife" style="text-decoration: none; background: #333; color: white; padding: 8px 20px; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">🐆 Wildlife</a>
+        </div>
+
+        <section id="beaches" style="margin-bottom: 40px; scroll-margin-top: 100px;">
+            <h3 class="category-title" style="border-left: 5px solid #ff4a5a;">🏖️ Sun-Drenched Beaches</h3>
+            <div class="destinations-grid">
+                <article class="dest-card">
+                    <div class="dest-img">
+                        <img src="bali.jpg" alt="Tropical Bali, Indonesia">
+                    </div>
+                    <div class="dest-body">
+                        <span class="tag-badge" style="color: #ff4a5a; background: #fff0f1;">Tropical Coast</span>
+                        <h3>Tropical Bali, Indonesia</h3>
+                        <p>Experience pristine beaches, lush green volcanic mountains, and historic spiritual sanctuaries.</p>
+                        <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Gateway</a>
+                    </div>
+                </article>
+
+                <article class="dest-card">
+                    <div class="dest-img">
+                        <img src="greece.jpg" alt="Santorini, Greece">
+                    </div>
+                    <div class="dest-body">
+                        <span class="tag-badge" style="color: #ff4a5a; background: #fff0f1;">Island Escape</span>
+                        <h3>Santorini Coast, Greece</h3>
+                        <p>Relax beside white-washed villa cliffs overlooking breathtaking Aegean volcanic calderas.</p>
+                        <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Gateway</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="mountains" style="margin-bottom: 40px; scroll-margin-top: 100px;">
+            <h3 class="category-title" style="border-left: 5px solid #4a90e2;">🏔️ Majestic Mountains</h3>
+            <div class="destinations-grid">
+                <article class="dest-card">
+                    <div class="dest-img">
+                        <img src="animal.jpg" alt="Patagonia, Chile">
+                    </div>
+                    <div class="dest-body">
+                        <span class="tag-badge" style="color: #4a90e2; background: #eef5fc;">Wild Wilderness</span>
+                        <h3>Wild Patagonia, Chile</h3>
+                        <p>Conquer sharp granite peaks, majestic blue glaciers, and vast wind-swept wilderness tracks.</p>
+                        <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Gateway</a>
+                    </div>
+                </article>
+
+                <article class="dest-card">
+                    <div class="dest-img">
+                        <img src="swis.jpg" alt="Swiss Alps, Switzerland">
+                    </div>
+                    <div class="dest-body">
+                        <span class="tag-badge" style="color: #4a90e2; background: #eef5fc;">Alpine Peaks</span>
+                        <h3>Swiss Alps, Switzerland</h3>
+                        <p>Discover snow-capped mountain peaks, crystal-clear alpine lakes, and world-class ski resorts.</p>
+                        <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Gateway</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="cultural" style="margin-bottom: 40px; scroll-margin-top: 100px;">
+            <h3 class="category-title" style="border-left: 5px solid #9013fe;">🏛️ Immersive Culture</h3>
+            <div class="destinations-grid">
+                <article class="dest-card">
+                    <div class="dest-img">
+                        <img src="japan.jpg" alt="Kyoto, Japan">
+                    </div>
+                    <div class="dest-body">
+                        <span class="tag-badge" style="color: #9013fe; background: #f5e6ff;">Historic Heritage</span>
+                        <h3>Kyoto Serenity, Japan</h3>
+                        <p>Step through centuries of rich cultural history featuring classic wooden temples and shrines.</p>
+                        <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Gateway</a>
+                    </div>
+                </article>
+
+                <article class="dest-card">
+                    <div class="dest-img">
+                        <img src="france.jpg" alt="Paris, France">
+                    </div>
+                    <div class="dest-body">
+                        <span class="tag-badge" style="color: #9013fe; background: #f5e6ff;">Art & History</span>
+                        <h3>Parisian Charm, France</h3>
+                        <p>Delve into world-renowned art scenes, iconic monuments, and historic architectural wonders.</p>
+                        <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Gateway</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="wildlife" style="margin-bottom: 40px; scroll-margin-top: 100px;">
+            <h3 class="category-title" style="border-left: 5px solid #2ecc71;">🐆 Untamed Wildlife</h3>
+            <div class="destinations-grid">
+                <article class="dest-card">
+                    <div class="dest-img">
+                        <img src="wild.jpg" alt="African Wildlife in Serengeti, Tanzania" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="dest-body">

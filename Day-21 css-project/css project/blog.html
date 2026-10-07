@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Insights Blog | Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .blog-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .blog-img img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .blog-body {
+            padding: 25px;
+            flex-grow: 1;
+        }
+        .blog-meta-tag {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .blog-body h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+        .blog-body p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h2>Hav<span>en</span></h2></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container section-padding">
+        <h2 class="section-title">Stories From The Field</h2>
+        
+        <div class="blog-grid">
+            
+            <article class="blog-card">
+                <div class="blog-img">
+                    <img src="solo.jpg" alt="Minimalist packing gear for solo travelers">
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta-tag">📅 August 12, 2026 &bull; <span style="color: #ff4a5a;">Gear Tips</span></div>
+                    <h3>Solo Backpacking Essentials</h3>
+                    <p>Learn how to select ultra-light multi-use equipment configurations for month-long solo itineraries.</p>
+                    <a href="#" class="btn" style="padding: 8px 18px; font-size: 0.9rem;">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-img">
+                    <img src="night.jpg" alt="Bustling street food night market stalls">
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta-tag">📅 July 28, 2026 &bull; <span style="color: #e67e22;">Culinary</span></div>
+                    <h3>Navigating Local Night Markets</h3>
+                    <p>Our comprehensive framework to safely locating and vetting authentic, delicious roadside food hubs.</p>
+                    <a href="#" class="btn" style="padding: 8px 18px; font-size: 0.9rem;">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-img">
+                    <img src="sun.jpg" alt="Camera lens framing panoramic golden sunset landscapes">
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta-tag">📅 June 15, 2026 &bull; <span style="color: #9013fe;">Photography</span></div>
+                    <h3>Chasing Perfect Golden Hours</h3>
+                    <p>Composition rules and planning strategies for capture techniques across changing landscapes.</p>
+                    <a href="#" class="btn" style="padding: 8px 18px; font-size: 0.9rem;">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-img">
+                    <img src="eco.jpg" alt="Conscious explorer tracking through remote forest path">
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta-tag">📅 May 04, 2026 &bull; <span style="color: #2ecc71;">Eco-Travel</span></div>
+                    <h3>The Zero-Footprint Blueprint</h3>
+                    <p>Practical protocols for low-waste exploration paths, plastic reduction, and keeping local campsites pristine.</p>
+                    <a href="#" class="btn" style="padding: 8px 18px; font-size: 0.9rem;">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-img">
+                    <img src="plain.jpg" alt="Passenger airplane jet flying smoothly above white cloud blankets">
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta-tag">📅 April 19, 2026 &bull; <span style="color: #4a90e2;">Transit</span></div>
+                    <h3>Surviving 15+ Hour Transit Lanes</h3>
+                    <p>Circadian adjustment strategies, compression garments, and nutrition rhythms to beat severe jet lag instantly.</p>
+                    <a href="#" class="btn" style="padding: 8px 18px; font-size: 0.9rem;">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-img">
+                    <img src="digital.jpg" alt="Digital nomad laptop working with island background scene">
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta-tag">📅 March 30, 2026 &bull; <span style="color: #00ced1;">Nomad Life</span></div>
+                    <h3>Top Global Digital Nomad Havens</h3>
+                    <p>Evaluating destinations by average Wi-Fi velocity, community coliving infrastructure, and cost metrics.</p>
+                    <a href="#" class="btn" style="padding: 8px 18px; font-size: 0.9rem;">Read More</a>
+                </div>
+            </article>
+
+        </div>
+
+        <div style="background: #f9f9f9; padding: 50px 30px; border-radius: 8px; text-align: center; max-width: 800px; margin: 0 auto 20px auto; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+            <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: #333;">Get Secret Expedition Logs</h3>
+            <p style="color: #666; font-size: 1rem; margin-bottom: 25px; max-width: 550px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+                We broadcast unlisted flight discount opportunities, deep remote guide evaluations, and seasonal safety adjustments once a week.
+            </p>
+            <form style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 500px; margin: 0 auto;" onclick="event.preventDefault();">
+                <input type="email" placeholder="Enter your email address" required style="flex: 1; min-width: 260px; padding: 12px 20px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.95rem; outline: none;">
+                <button type="submit" class="btn" style="border: none; cursor: pointer; padding: 12px 25px;">Join Inner Circle</button>
+            </form>
+        </div>
+    </main>
+
+    <footer><p>&copy; 2026 Haven Travel Agency. All Rights Reserved.</p></footer>
+</body>
+</html>
